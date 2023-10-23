@@ -3,14 +3,10 @@ canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 //canvas.style.background = 'black'
-context = canvas.getContext('2d');
+ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'rgb(40,40,40)';
+ctx.fillRect(0,0,canvas.width, canvas.height);
 
 
-
-function draw(){
-    ion = context.rect(200,200,4,4)
-    context.fill();
-
-}
-draw()
 
