@@ -1,8 +1,8 @@
 
 canvas = document.getElementById('canvas');
-canvas.width = window.innerWidth
+canvas.width = 2000
 
-canvas.height = window.innerHeight
+canvas.height = 900
 //canvas.style.background = 'black'
 ctx = canvas.getContext('2d');
 

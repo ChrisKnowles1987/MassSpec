@@ -5,7 +5,7 @@ class Particle {
         this.mass = mass
         this.charge = charge
         this.colour = this.determineColour(this.charge)
-        this.Xvelocity = 1
+        this.Xvelocity = 10
         this.Yvelocity = 0.0
         
 
@@ -29,17 +29,20 @@ class Particle {
         this.y = this.y +this.Yvelocity
         
         
-
-        this.Xvelocity+=0.1 * this.mass /100
-        this.Yvelocity+= this.Yvelocity * this.charge /100
+        if(this.x >canvas.width/2){
+        this.Xvelocity-=  this.mass /500
+        if(this.Xvelocity <= 0){
+            this.Xvelocity = 0
+        }
+        this.Yvelocity+= 0.1+ this.Yvelocity * this.mass / this.charge /1000}
         
         
         
 
-        if(this.x > canvas.width ){
-            this.x =100
-            this.y = 100
-            this.Xvelocity = 0.01
+        if(this.y > canvas.height ){
+            // this.x =100
+            this.y = 0
+            // this.Xvelocity = 10
             this.Yvelocity = 0.0
         }
 
