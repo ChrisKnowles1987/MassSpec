@@ -30,7 +30,7 @@ class Particle {
         
         
         if(this.x >canvas.width/2){
-        this.Xvelocity-=  this.mass /500
+        this.Xvelocity -=  this.mass /500
         if(this.Xvelocity <= 0){
             this.Xvelocity = 0
         }
@@ -40,9 +40,9 @@ class Particle {
         
 
         if(this.y > canvas.height ){
-            // this.x =100
-            this.y = 0
-            // this.Xvelocity = 10
+            this.x = 100
+            this.y = 100
+            this.Xvelocity = 10
             this.Yvelocity = 0.0
         }
 

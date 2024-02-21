@@ -10,7 +10,7 @@ ctx.fillStyle = 'rgb(40,40,40)';
 ctx.fillRect(0,0,canvas.width, canvas.height);
 
 let particles = [];
-for (i=0; i<1000; i++) {
+for (i=0; i<10; i++) {
     particles.push(new Particle(100,100, 
         Math.random() *200,
         // <0.5? 100: 200 , 
